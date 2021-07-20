@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoAppointmentRequiredViewController" customModule="RayPets" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Appointment needed!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z82-rc-FBz">
+                    <rect key="frame" x="20" y="84" width="374" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Just stop by our office" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0BM-Et-iya">
+                    <rect key="frame" x="121.5" y="118" width="171" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVE-w3-M70">
+                    <rect key="frame" x="0.0" y="806" width="414" height="56"/>
+                    <color key="backgroundColor" systemColor="linkColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="Dkj-xJ-mcl"/>
+                    </constraints>
+                    <state key="normal" title="Ok, thanks!">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="okayButtonClicked:" destination="-1" eventType="touchUpInside" id="Ms7-yu-hjd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="0BM-Et-iya" firstAttribute="top" secondItem="Z82-rc-FBz" secondAttribute="bottom" constant="10" id="7LJ-dG-xL0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nVE-w3-M70" secondAttribute="trailing" id="Btd-6K-97E"/>
+                <constraint firstItem="0BM-Et-iya" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="V86-Dk-BbR"/>
+                <constraint firstItem="nVE-w3-M70" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ccS-0O-nbk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="nVE-w3-M70" secondAttribute="bottom" id="fkt-5G-OLT"/>
+                <constraint firstItem="Z82-rc-FBz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="vev-DH-jwM"/>
+                <constraint firstItem="Z82-rc-FBz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="vrc-1q-OmV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Z82-rc-FBz" secondAttribute="trailing" constant="20" id="wgv-KV-Ckb"/>
+            </constraints>
+            <point key="canvasLocation" x="118.84057971014494" y="153.34821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

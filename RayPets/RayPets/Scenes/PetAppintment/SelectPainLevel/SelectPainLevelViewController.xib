@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectPainLevelViewController" customModule="RayPets" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OuS-KJ-cnH">
+                    <rect key="frame" x="16" y="261" width="343" height="300"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8M-nh-9Hw">
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="60"/>
+                            <state key="normal" title="none"/>
+                            <connections>
+                                <action selector="noneButtonClicked:" destination="-1" eventType="touchUpInside" id="3CM-TV-6We"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q34-id-bPh">
+                            <rect key="frame" x="0.0" y="60" width="343" height="60"/>
+                            <state key="normal" title="little"/>
+                            <connections>
+                                <action selector="littleButtonClicked:" destination="-1" eventType="touchUpInside" id="4uw-kX-AKc"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRo-vW-yg1">
+                            <rect key="frame" x="0.0" y="120" width="343" height="60"/>
+                            <state key="normal" title="moderate"/>
+                            <connections>
+                                <action selector="moderateButtonClicked:" destination="-1" eventType="touchUpInside" id="xnM-tv-XMr"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDq-Iw-3DH">
+                            <rect key="frame" x="0.0" y="180" width="343" height="60"/>
+                            <state key="normal" title="severe"/>
+                            <connections>
+                                <action selector="severeButtonClicked:" destination="-1" eventType="touchUpInside" id="SAB-jw-eTf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeJ-5w-nKc">
+                            <rect key="frame" x="0.0" y="240" width="343" height="60"/>
+                            <state key="normal" title="worst possible"/>
+                            <connections>
+                                <action selector="worstPossibleButtonClicked:" destination="-1" eventType="touchUpInside" id="FPE-wz-5hz"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="gd6-a1-jQS"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much pain does your pet seem to have?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSz-K0-HCI">
+                    <rect key="frame" x="20" y="74" width="335" height="48"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="hSz-K0-HCI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="6Ud-iP-6wx"/>
+                <constraint firstItem="hSz-K0-HCI" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="9L6-VQ-ntU"/>
+                <constraint firstItem="hSz-K0-HCI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="FBH-Sh-gfu"/>
+                <constraint firstItem="OuS-KJ-cnH" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="YMS-WZ-1yD"/>
+                <constraint firstAttribute="trailing" secondItem="hSz-K0-HCI" secondAttribute="trailing" constant="20" id="gDA-l3-DuE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OuS-KJ-cnH" secondAttribute="trailing" constant="16" id="o8q-2e-rqg"/>
+                <constraint firstItem="OuS-KJ-cnH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="s3X-52-d4R"/>
+            </constraints>
+            <point key="canvasLocation" x="118.84057971014494" y="153.34821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
