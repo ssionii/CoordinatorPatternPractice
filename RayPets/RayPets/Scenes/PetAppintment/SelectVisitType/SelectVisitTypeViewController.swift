@@ -28,7 +28,7 @@ class SelectVisitTypeViewController: UIViewController {
     }
     
     
-    var coordinatorDelegate: SelectVisitTypeControllerDelegate?
+    weak var coordinatorDelegate: SelectVisitTypeControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol FakingItViewControllerDelegate {
+protocol FakingItViewControllerDelegate: class {
     func fakingItViewControllerPressedIsFake(_ controller: FakingItViewController)
     func fakingItViewControllerPressedNotFake(_ controller: FakingItViewController)
 }
@@ -22,7 +22,7 @@ class FakingItViewController: UIViewController {
         coordinatorDelegate?.fakingItViewControllerPressedIsFake(self)
     }
     
-    var coordinatorDelegate: FakingItViewControllerDelegate?
+    weak var coordinatorDelegate: FakingItViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()

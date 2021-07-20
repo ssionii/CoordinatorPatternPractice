@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol NoAppointmentRequiredViewContorllerDelegate {
+protocol NoAppointmentRequiredViewContorllerDelegate: class {
     func noAppointMentViewControllerDidPressOkay(_ controller: NoAppointmentRequiredViewController)
 }
 
@@ -17,7 +17,7 @@ class NoAppointmentRequiredViewController: UIViewController {
         coordinatorDelegate?.noAppointMentViewControllerDidPressOkay(self)
     }
     
-    var coordinatorDelegate: NoAppointmentRequiredViewContorllerDelegate?
+    weak var coordinatorDelegate: NoAppointmentRequiredViewContorllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()

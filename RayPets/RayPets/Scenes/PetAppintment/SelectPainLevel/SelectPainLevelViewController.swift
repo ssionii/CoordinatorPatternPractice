@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol SelectPainLevelViewControllerDelegate {
+protocol SelectPainLevelViewControllerDelegate: class {
     func selectPainLevelViewController(_ controller: SelectPainLevelViewController, didSelect painLevel: PainLevel)
 }
 
@@ -42,7 +42,7 @@ class SelectPainLevelViewController: UIViewController {
     }
     
     
-    var coordinatorDelegate: SelectPainLevelViewControllerDelegate?
+    weak var coordinatorDelegate: SelectPainLevelViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
